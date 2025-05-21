@@ -18,7 +18,7 @@ export default function ReflectionPage() {
   const router = useRouter();
 
 
-  // Load from localStorage
+
   useEffect(() => {
     const savedAnswers = localStorage.getItem("reflectionAnswers");
     const savedJournal = localStorage.getItem("journalEntry");
@@ -26,12 +26,11 @@ export default function ReflectionPage() {
     if (savedJournal) setJournalEntry(savedJournal);
   }, []);
 
-  // Save answers
   useEffect(() => {
     localStorage.setItem("reflectionAnswers", JSON.stringify(answers));
   }, [answers]);
 
-  // Save journal
+
   useEffect(() => {
     if (submitted) {
       localStorage.setItem("journalEntry", journalEntry);
@@ -51,12 +50,14 @@ export default function ReflectionPage() {
     if (hasContent) {
       setSubmitted(true);
       setError(false);
-      router.push('/journal'); // Go to journal page
+      setAnswers(["", "", ""]); 
+      router.push('/journal'); 
     } else {
       setSubmitted(false);
       setError(true);
     }
   };
+  
   
 
   return (
