@@ -2,7 +2,7 @@
 
 **Before You Text Them** is a calming web app that helps people in no contact or emotionally difficult situations resist the urge to text someone impulsively. It guides users through reflection, journaling, and self-awareness before they act.
 
-Live Site 👉 [beforeyoutextthem.vercel.app](https://beforeyoutextthem.vercel.app)
+Live Site 👉 [before-you-text-them.vercel.app](https://before-you-text-them.vercel.app)
 
 ---
 
