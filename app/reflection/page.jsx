@@ -100,21 +100,6 @@ export default function ReflectionPage() {
           ⚠️ Please reflect on at least one prompt before submitting.
         </p>
       )}
-
-      {/* ✍️ Journal appears after submit */}
-      {submitted && (
-        <div className="w-full max-w-xl mt-10 p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-lg space-y-4">
-          <h3 className="text-lg font-semibold text-slate-800">
-            What would you have texted them?
-          </h3>
-          <textarea
-            className="w-full h-40 p-4 border border-slate-300 bg-white text-slate-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-300 resize-none"
-            placeholder="Write the message here. You don't have to send it."
-            value={journalEntry}
-            onChange={(e) => setJournalEntry(e.target.value)}
-          />
-        </div>
-      )}
     </main>
   );
 }
