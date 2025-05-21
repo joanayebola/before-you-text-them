@@ -62,9 +62,9 @@ export default function ReflectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col items-center gap-6 px-4 py-12 bg-white/90">
-      <h2 className="text-xl font-medium text-slate-700">
+     {/* <h2 className="text-xl font-medium text-slate-700">
         Reflection Progress: {Math.round((answers.filter(ans => ans.trim() !== "").length / answers.length) * 100)}%
-      </h2>
+      </h2> */}
 
       {prompts.map((item, index) => (
         <div
