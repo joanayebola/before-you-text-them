@@ -20,7 +20,7 @@ Live Site [before-you-text-them.vercel.app](https://before-you-text-them.vercel.
 - **Vercel** for deployment
 - **localStorage** for lightweight persistence
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repo
 
